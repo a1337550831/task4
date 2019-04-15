@@ -1,0 +1,341 @@
+main,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.roa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phoer {
+    margin-left: 5%;
+    color: #29B078;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* 下面三个是 右上角三图标样式 */
+.bgi-1 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(../task802/css801.png) no-repeat -662px -330px;
+}
+
+.bgi-2 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(../task802/css801.png) no-repeat -695px -330px;
+}
+
+.bgi-3 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(../task802/css801.png) no-repeat -728px -330px;
+}
+
+/* 导航栏 */
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 54% 0 5%;
+}
+
+.nav-link {
+
+    line-height: 60px;
+    text-align: center;
+    padding: 0;
+    width: 60px;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid white;
+}
+
+/* 为什么 导航栏不可以用这个?
+.bg {
+    background-color: #29B078;
+    height: 50px;
+} */
+.wangzi {
+    font-size: 9px;
+}
+
+.butt {
+    margin-right: 20px;
+    border: 0;
+}
+
+.shouye {
+    align-items: center;
+}
+
+/* .but-1 {
+    border: 0;
+} */
+
+@media (max-width:568px) {
+    .navbar-nav {
+        z-index: 12;
+
+    }
+}
+
+/* main */
+/* 图像 */
+.bgi-m {
+    width: 100%;
+}
+
+/* 内容第一行 */
+.kuaiji {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+
+.first {
+    font: 18px/6px MicrosoftYaHei;
+    font-weight: bold;
+}
+
+.sanjiao {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(-45deg);
+}
+
+.phoers {
+    margin-left: 5px;
+    color: #29B078;
+    font: 13px/6px MicrosoftYaHei;
+    font-weight: bold;
+}
+
+/* 左边内容 */
+.main-left {
+    height: 560px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    box-shadow: 0px 0px 2px 3px #888888;
+}
+
+.company {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+}
+
+/* .example{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+} */
+/* .yuan{
+    position: absolute;
+    left: 30%;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(220, 120, 60, 0.31);
+} */
+.enterprise {
+    font: 13px/6px MicrosoftYaHei;
+    font-weight: bold;
+}
+
+/* 下面这个为后代选择器 .li为ul的类选择器  而ul为li的父级 */
+.li li:hover {
+    color: red;
+    /* 用来定义ul标签 li前的符号  disc定义实体圆  然后上面定义了圆为红色 */
+    list-style-type: disc;
+}
+
+li {
+    height: 50px;
+    line-height: 50px;
+}
+
+a:not([href]):not([tabindex]) {
+    color: rgba(41, 176, 120, 1);
+}
+
+/* a::before{
+    display: flex;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(220, 120, 60, 0.31);
+    
+} */
+
+@media(min-width:768px) {
+    .main-left {
+        margin-right: 8%;
+    }
+}
+
+@media(max-width:768px) {
+    .main-left {
+        margin-bottom: 8%;
+    }
+}
+
+/* 右边的内容 */
+.main-rigth {
+    border: 1px solid rgba(153, 153, 153, 1);
+    box-shadow: 0px 0px 2px 3px #888888;
+}
+
+.tudou {
+    padding: 10px 40px;
+    font: 13px/18px MicrosoftYaHei;
+
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+
+    /* 首行缩进 */
+    text-indent: 27px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #29B078;
+}
+
+.font {
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.flexs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+}
+
+.fle {
+    display: flex;
+    flex-direction: column;
+}
+
+.fon {
+    margin-bottom: 30px;
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fontse {
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fot {
+    margin: 15px 0;
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.bgi-18 {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+    background: url(../task802/css801.png) no-repeat -306px -449px;
+}
+
+@media(max-width:576px) {
+    .fle {
+        width: 55%;
+    }
+
+    .flexs {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .fon {
+        margin: 3% 0;
+    }
+
+    .fontse {
+        margin-bottom: 5%;
+    }
+}
+
+.jiaodi {
+    color: aliceblue;
+    text-align: center;
+    border-top: 1px solid rgba(153, 153, 153, 1);
+}
+
+/* 页脚hover */
+.hov .fot:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+/* 锚点 */
+.miaodian {
+    position: fixed;
+    right: 30px;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gold;
+}
+
+.sanj {
+    position: fixed;
+    right: 34px;
+    top: 200px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 25px solid rgba(153, 153, 153, 1);
+}
+
+.text {
+    display: none;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    /* 文字竖排 */
+    width: 25px;
+    font-size: 15px;
+    word-wrap: break-word;
+    letter-spacing: 20px;
+}
+
+.go-top:hover .text {
+    display: inline-block;
+}

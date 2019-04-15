@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE tiles-definitions PUBLIC
+                "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+                "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<!--tiles布局文件——模板文件-->
+<definition name="base-configuration" template="/WEB-INF/template.jsp">
+    <!--复用模块-->
+    <put-attribute name="header" value="/static/jsp/header.jsp"/>
+    <put-attribute name="footer" value="/static/jsp/footer.jsp"/>
+</definition>
+<!--tiles布局文件   第三页模板-->
+<definition name="base-company" template="/static/jsp/company.jsp">
+    <!--复用模块-->
+    <put-attribute name="header" value="/static/jsp/header.jsp"/>
+    <put-attribute name="footer" value="/static/jsp/footer.jsp"/>
+    <put-attribute name="menu" value="/static/jsp/menu.jsp"/>
+</definition>
+<!--首页-->
+<definition name="index" extends="base-configuration">
+    <put-attribute name="head" value="/static/jsp/head1.jsp"/>
+    <put-attribute name="body" value="/static/jsp/body1.jsp"/>
+</definition>
+<!--职业-->
+<definition name="job" extends="base-configuration">
+    <put-attribute name="head" value="/static/jsp/head2.jsp"/>
+    <put-attribute name="body" value="/static/jsp/body2.jsp"/>
+</definition>
+
+<!--推荐企业-->
+<definition name="company" extends="base-company">
+    <put-attribute name="head" value="/static/jsp/head3.jsp"/>
+    <put-attribute name="body" value="/static/jsp/body3.jsp"/>
+</definition>
+</tiles-definitions>

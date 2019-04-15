@@ -1,0 +1,499 @@
+main,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.roa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phoer {
+    margin-left: 5%;
+    color: #29B078;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* 下面三个是 右上角三图标样式 */
+.bgi-1 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(css801.png) no-repeat -662px -330px;
+}
+
+.bgi-2 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(css801.png) no-repeat -695px -330px;
+}
+
+.bgi-3 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(css801.png) no-repeat -728px -330px;
+}
+
+
+/* 导航栏 */
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 54% 0 5%;
+}
+
+.nav-link {
+
+    line-height: 60px;
+    text-align: center;
+    padding: 0;
+    width: 60px;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid white;
+}
+
+/* 为什么 导航栏不可以用这个?
+.bg {
+    background-color: #29B078;
+    height: 50px;
+} */
+.wangzi {
+    font-size: 9px;
+}
+
+.butt {
+    margin-right: 20px;
+    border: 0;
+}
+
+.shouye {
+    align-items: center;
+}
+
+/* .but-1 {
+    border: 0;
+} */
+
+@media (max-width:568px) {
+    .navbar-nav {
+        z-index: 12;
+
+    }
+}
+
+
+
+/* 内容 */
+.font {
+    font: 8px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+
+.gaoxiao {
+    display: flex;
+    flex-direction: column;
+    /* 下面这行的作用是 水平居中 */
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.gaoxia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid rgba(153, 153, 153, 0.5);
+}
+
+@media (max-width:576px) {
+    .gaoxia {
+        border: 0;
+    }
+}
+
+main {
+    background-color: rgba(153, 153, 153, 0.05);
+}
+
+.min {
+    padding: 40px 20px 0 20px;
+}
+
+.bgi-4 {
+    width: 22px;
+    height: 40px;
+    background: url(css801.png) no-repeat -10px -523px;
+}
+
+.bgi-5 {
+    width: 30px;
+    height: 40px;
+    background: url(css801.png) no-repeat -612px -330px;
+}
+
+.bgi-6 {
+    width: 26px;
+    height: 40px;
+    background: url(css801.png) no-repeat -372px -449px;
+}
+
+.gaoxi {
+    display: flex;
+    align-items: center;
+}
+
+.bgi-7 {
+    width: 7px;
+    height: 7px;
+    background: url(css801.png) no-repeat -791px -330px;
+}
+
+.bg-1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    font: 9px / 30px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(41, 176, 120, 1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 2px 0px rgba(8, 1, 3, 0.15);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.fonts {
+    /*为了让文字的长度都一样  */
+    flex: 1;
+    margin: 20px;
+    font: 8px/13px MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.there {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5px;
+
+}
+
+.bgi-8 {
+    width: 10px;
+    height: 10px;
+    background: url(css801.png) no-repeat -761px -330px;
+}
+
+.touxiang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 边框四周的阴影（因为前面二个都是0 所以四周都有） */
+    box-shadow: 0px 0px 5px 5px #888888;
+    background-color: white;
+}
+
+.yuanyuan {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.yuans {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.yuan {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.bgi-9 {
+    width: 54px;
+    height: 54px;
+    margin: 10px;
+    background: url(css801.png)no-repeat -84px -449px;
+}
+
+.bgi-10 {
+    width: 54px;
+    height: 54px;
+    margin: 10px;
+    background: url(css801.png) no-repeat -232px -449px;
+}
+
+.bgi-11 {
+    width: 54px;
+    height: 54px;
+    margin: 10px;
+    background: url(css801.png) no-repeat -158px -449px;
+}
+
+.bgi-12 {
+    width: 54px;
+    height: 54px;
+    margin: 10px;
+    background: url(css801.png) no-repeat -10px -449px;
+}
+
+/* 下面这个是为了消除  .container类选择器自带的媒体查询对header第二行背景颜色的影响 
+它自带的媒体查询为：@media (min-width: 576px){
+    .container {
+        max-width: 720px;
+    }
+}    即当宽度大于576px时 窗口的最大宽度就变成了720px 当调窗口大于720px时，背景颜色就没了
+ */
+/* media() 括号里面的是判断条件，技巧：大于换小于 小于换大于 例下：即当大于768px,就满足条件，则执行大括号的选择器 */
+
+@media (max-width:768px) {
+    .touxiang {
+        width: 50%;
+        margin: 20px auto;
+    }
+}
+
+.bgi-13 {
+    width: 106px;
+    height: 88px;
+    background: url(css801.png) no-repeat -162px -330px;
+}
+
+.bgi-14 {
+    width: 88px;
+    height: 33px;
+    background: url(css801.png) no-repeat -396px -330px;
+}
+
+.bgi-15 {
+    width: 88px;
+    height: 33px;
+    background: url(css801.png) no-repeat -504px -330px;
+
+}
+
+.bgi-16 {
+    width: 110px;
+    height: 71px;
+    background: url(css801.png) no-repeat -288px -330px;
+}
+
+.bgi-17 {
+    width: 132px;
+    height: 99px;
+    background: url(css801.png) no-repeat -10px -330px;
+}
+
+.zhan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.zhanyue {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.zhanyue:hover {
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+/* 使用媒体查询来实现倒数第二行 实现响应式 */
+@media(max-width:568px) {
+    .zhan {
+        flex-direction: column;
+    }
+
+    .zhanyue {
+        width: 60%;
+        margin: 20px auto;
+        height: 100px;
+
+    }
+}
+
+
+@media(min-width:568px) {
+    .zhanyue {
+        width: 15%;
+        height: 90px;
+        margin: 2.5%;
+    }
+}
+
+
+.marg {
+    margin-bottom: 40px;
+}
+
+/* 设置margin padding等 也会影响 栅格布局的分布  因为它们也占位置 */
+.ruanjian {
+    display: flex;
+    /* 下面这一行对各项的分布排列很重要  */
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.shouji {
+    font: 7px/15px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(153, 153, 153, 1);
+    vertical-align: middle;
+}
+
+.shouji:hover {
+    padding-bottom: 5px;
+    color: #29B078;
+    border-bottom: 3px solid rgba(41, 176, 120, 1);
+
+
+}
+
+@media (min-width:576px)and (max-width:768px) {
+    .shouj {
+        width: 20%;
+    }
+}
+
+@media(max-width:576px) {
+    .shouj {
+        width: 40%;
+    }
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #29B078;
+}
+
+.flexs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+}
+
+.fle {
+    display: flex;
+    flex-direction: column;
+}
+
+.fon {
+    margin-bottom: 30px;
+    font: 8px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fontse {
+    font: 8px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fot {
+    margin: 15px 0;
+    font: 8px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.bgi-18 {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+    background: url(css801.png) no-repeat -306px -449px;
+}
+
+@media(max-width:576px) {
+    .fle {
+        width: 55%;
+    }
+
+    .flexs {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .fon {
+        margin: 3% 0;
+    }
+
+    .fontse {
+        margin-bottom: 5%;
+    }
+}
+
+.jiaodi {
+    color: aliceblue;
+    text-align: center;
+    border-top: 1px solid rgba(153, 153, 153, 1);
+}
+
+/* 页脚hover */
+.hov .fot:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+/* 锚点 */
+.miaodian {
+    position: fixed;
+    right: 30px;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gold;
+}
+
+.sanj {
+    position: fixed;
+    right: 34px;
+    top: 200px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 25px solid rgba(153, 153, 153, 1);
+}
+
+.text {
+    display: none;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    /* 文字竖排 */
+    width: 25px;
+    font-size: 15px;
+    word-wrap: break-word;
+    letter-spacing: 20px;
+}
+
+.go-top:hover .text {
+    display: inline-block;
+}

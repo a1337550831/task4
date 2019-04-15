@@ -1,0 +1,373 @@
+main,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgba(153, 153, 153, 0.05);
+}
+
+.table {
+    background-color: white;
+    border: 0;
+}
+
+.roa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phoer {
+    margin-left: 5%;
+    color: #29B078;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* 下面三个是 右上角三图标样式 */
+.bgi-1 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(css801.png) no-repeat -662px -330px;
+}
+
+.bgi-2 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(css801.png) no-repeat -695px -330px;
+}
+
+.bgi-3 {
+    width: 13px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(css801.png) no-repeat -728px -330px;
+}
+
+/* 导航栏 */
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 54% 0 5%;
+}
+
+.nav-link {
+
+    line-height: 60px;
+    text-align: center;
+    padding: 0;
+    width: 60px;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid white;
+}
+
+/* 为什么 导航栏不可以用这个?
+.bg {
+    background-color: #29B078;
+    height: 50px;
+} */
+.wangzi {
+    font-size: 9px;
+}
+
+.butt {
+    margin-right: 20px;
+    border: 0;
+}
+
+.shouye {
+    align-items: center;
+}
+
+/* .but-1 {
+    border: 0;
+} */
+
+@media (max-width:568px) {
+    .navbar-nav {
+        z-index: 12;
+
+    }
+}
+
+.kuaiji {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #D0D6D9;
+}
+
+.first {
+    font: 18px/6px MicrosoftYaHei;
+    font-weight: bold;
+}
+
+.sanjiao {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(-45deg);
+}
+
+.phoers {
+    margin-left: 5px;
+    color: #29B078;
+    font: 13px/6px MicrosoftYaHei;
+    font-weight: bold;
+}
+
+.fan {
+    font: 12px/50px MicrosoftYaHei;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.fang {
+    font: 12px/50px MicrosoftYaHei;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.fang:hover {
+    /* display: inline-block;
+width: 50px;
+height: 50px; */
+    background-color: #29B078;
+}
+
+.bgi-4 {
+    float: left;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    background: url(css802.png) no-repeat -10px -10px;
+}
+
+.gongcs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.webgcs {
+    height: 30px;
+    font: 8px/30px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+
+}
+
+.webgc {
+    height: 60px;
+    font: 7px/10px MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+
+}
+
+.menk {
+    margin: 5px;
+    font: 6px / 6px MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.bgi-5 {
+    /* 这里用inline-block是为了让文字与符号在同一行  */
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+    background: url(css802.png) no-repeat -100px -10px;
+}
+
+.nian {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lolo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+}
+
+.fop {
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 0px;
+    height: 100%;
+    animation: myFop 5s;
+}
+
+@keyframes myFop {
+    0% {
+        transform-origin: center;
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+.iosgcs {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.35);
+}
+
+.lolo:hover .fop {
+    display: flex;
+}
+
+.ment {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.meny {
+    margin: 0px 5%;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-indent: 30px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #29B078;
+}
+
+.font {
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.flexs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+}
+
+.fle {
+    display: flex;
+    flex-direction: column;
+}
+
+.fon {
+    margin-bottom: 30px;
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fontse {
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fot {
+    margin: 15px 0;
+    font: 12px/6px MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.bgi-18 {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+    background: url(css801.png) no-repeat -306px -449px;
+}
+
+@media(max-width:576px) {
+    .fle {
+        width: 55%;
+    }
+
+    .flexs {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .fon {
+        margin: 3% 0;
+    }
+
+    .fontse {
+        margin-bottom: 5%;
+    }
+}
+
+.jiaodi {
+    color: aliceblue;
+    text-align: center;
+    border-top: 1px solid rgba(153, 153, 153, 1);
+}
+
+/* 页脚hover */
+.hov .fot:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+.miaodian {
+    position: fixed;
+    right: 30px;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gold;
+}
+
+.sanj {
+    position: fixed;
+    right: 34px;
+    top: 200px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 25px solid rgba(153, 153, 153, 1);
+}
+
+.text {
+    display: none;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    /* 文字竖排 */
+    width: 25px;
+    font-size: 15px;
+    word-wrap: break-word;
+    letter-spacing: 20px;
+}
+
+.go-top:hover .text {
+    display: inline-block;
+}

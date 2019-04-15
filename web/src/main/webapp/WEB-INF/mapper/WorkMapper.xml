@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.WorkMapper">
+  <resultMap id="BaseResultMap" type="pojo.Work">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="direction" jdbcType="VARCHAR" property="direction" />
+    <result column="introduction" jdbcType="VARCHAR" property="introduction" />
+    <result column="threshold" jdbcType="VARCHAR" property="threshold" />
+    <result column="difficulty" jdbcType="VARCHAR" property="difficulty" />
+    <result column="pillulate" jdbcType="VARCHAR" property="pillulate" />
+    <result column="salary0" jdbcType="VARCHAR" property="salary0" />
+    <result column="salay1" jdbcType="VARCHAR" property="salay1" />
+    <result column="salay2" jdbcType="VARCHAR" property="salay2" />
+    <result column="salay3" jdbcType="VARCHAR" property="salay3" />
+    <result column="stunumber" jdbcType="INTEGER" property="stunumber" />
+    <result column="tips" jdbcType="VARCHAR" property="tips" />
+    <result column="demandnumber" jdbcType="INTEGER" property="demandnumber" />
+    <result column="article" jdbcType="VARCHAR" property="article" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, direction, introduction, threshold, difficulty, pillulate, salary0, salay1, 
+    salay2, salay3, stunumber, tips, demandnumber, article
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from works
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from works
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="pojo.Work">
+    insert into work (id, name, direction, 
+      introduction, threshold, difficulty, 
+      pillulate, salary0, salay1, 
+      salay2, salay3, stunumber, 
+      tips, demandnumber, article
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{direction,jdbcType=VARCHAR}, 
+      #{introduction,jdbcType=VARCHAR}, #{threshold,jdbcType=VARCHAR}, #{difficulty,jdbcType=VARCHAR}, 
+      #{pillulate,jdbcType=VARCHAR}, #{salary0,jdbcType=VARCHAR}, #{salay1,jdbcType=VARCHAR}, 
+      #{salay2,jdbcType=VARCHAR}, #{salay3,jdbcType=VARCHAR}, #{stunumber,jdbcType=INTEGER}, 
+      #{tips,jdbcType=VARCHAR}, #{demandnumber,jdbcType=INTEGER}, #{article,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="pojo.Work">
+    insert into works
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="direction != null">
+        direction,
+      </if>
+      <if test="introduction != null">
+        introduction,
+      </if>
+      <if test="threshold != null">
+        threshold,
+      </if>
+      <if test="difficulty != null">
+        difficulty,
+      </if>
+      <if test="pillulate != null">
+        pillulate,
+      </if>
+      <if test="salary0 != null">
+        salary0,
+      </if>
+      <if test="salay1 != null">
+        salay1,
+      </if>
+      <if test="salay2 != null">
+        salay2,
+      </if>
+      <if test="salay3 != null">
+        salay3,
+      </if>
+      <if test="stunumber != null">
+        stunumber,
+      </if>
+      <if test="tips != null">
+        tips,
+      </if>
+      <if test="demandnumber != null">
+        demandnumber,
+      </if>
+      <if test="article != null">
+        article,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="direction != null">
+        #{direction,jdbcType=VARCHAR},
+      </if>
+      <if test="introduction != null">
+        #{introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="threshold != null">
+        #{threshold,jdbcType=VARCHAR},
+      </if>
+      <if test="difficulty != null">
+        #{difficulty,jdbcType=VARCHAR},
+      </if>
+      <if test="pillulate != null">
+        #{pillulate,jdbcType=VARCHAR},
+      </if>
+      <if test="salary0 != null">
+        #{salary0,jdbcType=VARCHAR},
+      </if>
+      <if test="salay1 != null">
+        #{salay1,jdbcType=VARCHAR},
+      </if>
+      <if test="salay2 != null">
+        #{salay2,jdbcType=VARCHAR},
+      </if>
+      <if test="salay3 != null">
+        #{salay3,jdbcType=VARCHAR},
+      </if>
+      <if test="stunumber != null">
+        #{stunumber,jdbcType=INTEGER},
+      </if>
+      <if test="tips != null">
+        #{tips,jdbcType=VARCHAR},
+      </if>
+      <if test="demandnumber != null">
+        #{demandnumber,jdbcType=INTEGER},
+      </if>
+      <if test="article != null">
+        #{article,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="pojo.Work">
+    update works
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="direction != null">
+        direction = #{direction,jdbcType=VARCHAR},
+      </if>
+      <if test="introduction != null">
+        introduction = #{introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="threshold != null">
+        threshold = #{threshold,jdbcType=VARCHAR},
+      </if>
+      <if test="difficulty != null">
+        difficulty = #{difficulty,jdbcType=VARCHAR},
+      </if>
+      <if test="pillulate != null">
+        pillulate = #{pillulate,jdbcType=VARCHAR},
+      </if>
+      <if test="salary0 != null">
+        salary0 = #{salary0,jdbcType=VARCHAR},
+      </if>
+      <if test="salay1 != null">
+        salay1 = #{salay1,jdbcType=VARCHAR},
+      </if>
+      <if test="salay2 != null">
+        salay2 = #{salay2,jdbcType=VARCHAR},
+      </if>
+      <if test="salay3 != null">
+        salay3 = #{salay3,jdbcType=VARCHAR},
+      </if>
+      <if test="stunumber != null">
+        stunumber = #{stunumber,jdbcType=INTEGER},
+      </if>
+      <if test="tips != null">
+        tips = #{tips,jdbcType=VARCHAR},
+      </if>
+      <if test="demandnumber != null">
+        demandnumber = #{demandnumber,jdbcType=INTEGER},
+      </if>
+      <if test="article != null">
+        article = #{article,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="pojo.Work">
+    update works
+    set name = #{name,jdbcType=VARCHAR},
+      direction = #{direction,jdbcType=VARCHAR},
+      introduction = #{introduction,jdbcType=VARCHAR},
+      threshold = #{threshold,jdbcType=VARCHAR},
+      difficulty = #{difficulty,jdbcType=VARCHAR},
+      pillulate = #{pillulate,jdbcType=VARCHAR},
+      salary0 = #{salary0,jdbcType=VARCHAR},
+      salay1 = #{salay1,jdbcType=VARCHAR},
+      salay2 = #{salay2,jdbcType=VARCHAR},
+      salay3 = #{salay3,jdbcType=VARCHAR},
+      stunumber = #{stunumber,jdbcType=INTEGER},
+      tips = #{tips,jdbcType=VARCHAR},
+      demandnumber = #{demandnumber,jdbcType=INTEGER},
+      article = #{article,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByDirection" resultMap="BaseResultMap">
+    select * from works  where direction=#{direction}
+  </select>
+</mapper>
